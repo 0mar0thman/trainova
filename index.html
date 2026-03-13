@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/landingPage.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+    <div class="container">
+        <!-- Left: Brand -->
+        <a class="navbar-brand fw-bold fs-3" href="#">
+       Trainova
+        </a>
+
+        <!-- Toggler for mobile (always visible) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Center: Navbar links (collapsible) -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="pages/dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/team.html">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/marketplace.html">Marketplace</a></li>
+            </ul>
+        </div>
+
+        <!-- Right: Circular profile initial OM -->
+        <div class="ms-2 d-flex align-items-center">
+            <span class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-semibold" 
+                  style="width: 40px; height: 40px; font-size: 1.1rem; cursor: default;">Jo</span>
+        </div>
+    </div>
+</nav>
+
+    <!-- main content (landing page) -->
+    <div class="overflow-hidden">
+
+        <!-- HERO SECTION -->
+        <section class="py-5 py-lg-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div
+                            class="d-inline-flex align-items-center gap-2 px-3 py-1 bg-soft-blue text-primary rounded-pill mb-4">
+                            <i class="fa-solid fa-award fa-sm"></i>
+                            <span class="small fw-semibold">Learn by Building Real Projects</span>
+                        </div>
+                        <h1 class="display-3 fw-bold mb-4">Master Technology Through <span
+                                class="gradient-text">Hands-On Projects</span></h1>
+                        <p class="lead text-secondary mb-5">Stop watching endless tutorials. Start building real
+                            applications with personalized guidance, team collaboration, and industry-relevant projects.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#"
+                                class="btn btn-gradient py-3 px-4 rounded-3 d-inline-flex align-items-center gap-2">
+                                <i class="fa-solid fa-arrow-right"></i> Take Skill Assessment
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-custom py-3 px-4 rounded-3 d-inline-flex align-items-center gap-2">
+                                Explore Projects
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative">
+                        <div class="hero-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1759884248009-92c5e957708e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGxlYXJuaW5nJTIwdGVjaG5vbG9neSUyMGNvZGluZ3xlbnwxfHx8fDE3NzI5NjMyODd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                alt="students learning" class="img-fluid w-100"
+                                style="height: 400px; object-fit: cover;">
+                            <div class="position-absolute bottom-0 start-0 w-100 h-100"
+                                style="background: linear-gradient(to top, rgba(37,99,235,0.3), transparent);"></div>
+                        </div>
+                        <!-- floating cards -->
+                        <div class="position-absolute bottom-0 start-0 translate-middle-y ms-md-0 ms-2 d-none d-md-block"
+                            style="left: -20px!important; bottom: -20px!important;">
+                            <div class="floating-card d-flex align-items-center gap-3">
+                                <div class="bg-success bg-opacity-10 p-3 rounded-3">
+                                    <i class="fa-regular fa-circle-check text-success fs-4"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-bold fs-3">94%</div>
+                                    <div class="small text-secondary">Success Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 translate-middle-y d-none d-md-block"
+                            style="top: 0!important; right: -10px!important;">
+                            <div class="floating-card d-flex align-items-center gap-3">
+                                <div class="bg-purple bg-opacity-10 p-3 rounded-3" style="background: #f3e8ff;">
+                                    <i class="fa-solid fa-users text-purple" style="color: #9333ea;"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-bold fs-3">50K+</div>
+                                    <div class="small text-secondary">Students</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="py-5 bg-soft-stats">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number">50,000+</div>
+                        <div class="text-secondary">Active Students</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number">125,000+</div>
+                        <div class="text-secondary">Projects Completed</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number">94%</div>
+                        <div class="text-secondary">Success Rate</div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number">200+</div>
+                        <div class="text-secondary">Industry Partners</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Everything You Need to Succeed</h2>
+                    <p class="lead text-secondary mx-auto" style="max-width: 650px;">A complete learning ecosystem
+                        designed for practical, project-based education</p>
+                </div>
+                <div class="row g-4">
+                    <!-- feature 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="icon-wrapper"><i class="fa-solid fa-bullseye"></i></div>
+                            <h4 class="fw-semibold mb-2">Skill Assessment</h4>
+                            <p class="text-secondary">Start with a personalized assessment to find your perfect learning
+                                path</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="icon-wrapper"><i class="fa-solid fa-code"></i></div>
+                            <h4 class="fw-semibold mb-2">Real Projects</h4>
+                            <p class="text-secondary">Learn by building actual applications from scratch, not just
+                                watching videos</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="icon-wrapper"><i class="fa-solid fa-user-group"></i></div>
+                            <h4 class="fw-semibold mb-2">Team Collaboration</h4>
+                            <p class="text-secondary">Work with peers on group projects and learn teamwork skills</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="icon-wrapper"><i class="fa-solid fa-chart-line"></i></div>
+                            <h4 class="fw-semibold mb-2">Smart Recommendations</h4>
+                            <p class="text-secondary">AI-powered system detects weak skills and suggests improvement
+                                paths</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
+                            <h4 class="fw-semibold mb-2">Practical Challenges</h4>
+                            <p class="text-secondary">Solve real-world challenges and tasks that matter in the industry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="icon-wrapper"><i class="fa-solid fa-briefcase"></i></div>
+                            <h4 class="fw-semibold mb-2">Startup Marketplace</h4>
+                            <p class="text-secondary">Turn your ideas into reality with affordable project support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section class="py-5 bg-light bg-opacity-50">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-between mb-5">
+                    <div>
+                        <h2 class="display-5 fw-bold">Featured Projects</h2>
+                        <p class="lead text-secondary">Real-world applications built by students</p>
+                    </div>
+                    <a href="#"
+                        class="btn btn-dark rounded-3 d-none d-md-inline-flex align-items-center gap-2 px-4 py-3">
+                        View All <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="row g-4">
+                    <!-- project 1 -->
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <div class="position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzcyOTU2MDE5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                                    class="project-img w-100" alt="ecommerce">
+                                <span class="level-badge">Intermediate</span>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-primary small fw-semibold mb-1">Web Development</div>
+                                <h4 class="fw-semibold">E-Commerce Platform</h4>
+                                <div class="d-flex justify-content-between text-secondary small mt-3">
+                                    <span><i class="fa-regular fa-user me-1"></i> 1,234 students</span>
+                                    <span>6 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- project 2 -->
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <div class="position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1633250391894-397930e3f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzI4OTg1NTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                    class="project-img w-100" alt="fitness app">
+                                <span class="level-badge">Advanced</span>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-primary small fw-semibold mb-1">Mobile Development</div>
+                                <h4 class="fw-semibold">Mobile Fitness App</h4>
+                                <div class="d-flex justify-content-between text-secondary small mt-3">
+                                    <span><i class="fa-regular fa-user me-1"></i> 892 students</span>
+                                    <span>8 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- project 3 -->
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <div class="position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NzI4OTQ1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                    class="project-img w-100" alt="data dashboard">
+                                <span class="level-badge">Intermediate</span>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-primary small fw-semibold mb-1">Data Science</div>
+                                <h4 class="fw-semibold">Data Analytics Dashboard</h4>
+                                <div class="d-flex justify-content-between text-secondary small mt-3">
+                                    <span><i class="fa-regular fa-user me-1"></i> 2,156 students</span>
+                                    <span>5 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile view all button -->
+                <div class="text-center mt-4 d-md-none">
+                    <a href="#" class="btn btn-dark rounded-3 px-5 py-2">View All</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold">How It Works</h2>
+                    <p class="lead text-secondary">Your journey from beginner to professional developer</p>
+                </div>
+                <div class="row g-4">
+                    <!-- step 1 -->
+                    <div class="col-md-3 text-center">
+                        <div class="step-circle">
+                            <i class="fa-solid fa-bullseye text-white fs-2"></i>
+                            <div class="step-number">1</div>
+                        </div>
+                        <h5 class="fw-semibold">Take Assessment</h5>
+                        <p class="text-secondary small">Complete our skill evaluation to determine your level</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="step-circle">
+                            <i class="fa-solid fa-user-group text-white fs-2"></i>
+                            <div class="step-number">2</div>
+                        </div>
+                        <h5 class="fw-semibold">Join Your Group</h5>
+                        <p class="text-secondary small">Get matched with peers at your skill level</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="step-circle">
+                            <i class="fa-solid fa-code-branch text-white fs-2"></i>
+                            <div class="step-number">3</div>
+                        </div>
+                        <h5 class="fw-semibold">Build Projects</h5>
+                        <p class="text-secondary small">Work on real applications with guidance</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="step-circle">
+                            <i class="fa-solid fa-chart-line text-white fs-2"></i>
+                            <div class="step-number">4</div>
+                        </div>
+                        <h5 class="fw-semibold">Grow & Succeed</h5>
+                        <p class="text-secondary small">Track progress and master new skills</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="py-5 cta-gradient">
+            <div class="container text-center text-white py-4">
+                <i class="fa-solid fa-rocket fs-1 mb-4"></i>
+                <h2 class="display-5 fw-bold mb-3">Ready to Start Building?</h2>
+                <p class="lead text-blue-100 mb-4 mx-auto" style="max-width: 650px;">Join thousands of students
+                    transforming their careers through project-based learning</p>
+                <a href="#"
+                    class="btn btn-light rounded-3 py-3 px-5 d-inline-flex align-items-center gap-2 fs-5 fw-semibold">
+                    Start Your Assessment <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- simple footer -->
+    <footer class="bg-white border-top py-4">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <span class="text-secondary">© 2025 ProjectFlow, hands-on learning.</span>
+            <span class="text-secondary">
+                <i class="fa-brands fa-twitter ms-3"></i>
+                <i class="fa-brands fa-github ms-3"></i>
+                <i class="fa-brands fa-linkedin ms-3"></i>
+            </span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS for toggler etc (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

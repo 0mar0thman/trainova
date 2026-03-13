@@ -1,0 +1,236 @@
+* {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+}
+
+/* ================= CARDS ================= */
+
+.main-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+
+/* ================= TEAM MEMBERS ================= */
+
+.member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+/* ================= MEMBER COLORS ================= */
+
+.js { background: #6c63ff; }
+.am { background: #9b59b6; }
+.tk { background: #3498db; }
+.rd { background: #e74c3c; }
+
+
+/* ================= MEETINGS ================= */
+
+.meeting {
+  background: #f4f6fb;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+/* ================= CHAT ================= */
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.message.left {
+  background: #eef1f7;
+}
+
+.message.right {
+  background: #4f6cff;
+  color: white;
+  margin-left: auto;
+}
+
+.chat-input {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+
+/* ================= AVATAR STATUS ================= */
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #2563eb, #9333ea);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.status-online { background: #22c55e; }
+.status-away { background: #eab308; }
+.status-offline { background: #cbd5e1; }
+
+
+/* ================= SMALL AVATAR ================= */
+
+.avatar-sm {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #2563eb, #9333ea);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+
+/* ================= CHAT BUBBLES ================= */
+
+.chat-bubble-own {
+  background: #2563eb;
+  color: white;
+  border-radius: 1rem 1rem 0 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.chat-bubble-other {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-radius: 1rem 1rem 1rem 0;
+  padding: 0.75rem 1rem;
+}
+
+
+/* ================= TABS ================= */
+
+.nav-tabs .nav-link {
+  color: #475569;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 1rem 1.5rem;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #0f172a;
+}
+
+.nav-tabs .nav-link.active {
+  color: #2563eb;
+  background: white;
+  border-bottom: 2px solid #2563eb;
+}
+
+
+/* ================= TASKS ================= */
+
+.task-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: all 0.1s;
+}
+
+.task-item:hover {
+  border-color: #93c5fd;
+}
+
+
+/* ================= FILES ================= */
+
+.file-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: all 0.1s;
+  cursor: default;
+}
+
+.file-item:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px) {
+
+  .chat-box {
+    height: 300px;
+  }
+
+  .btn {
+    margin: 2px;
+  }
+
+}

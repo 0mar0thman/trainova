@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team · Trainova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style/team.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="#">Trainova</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+      </ul>
+    </div>
+    <div class="ms-2 d-flex align-items-center">
+      <span class="profile-circle">Jo</span>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-4 my-4">
+  <div class="mb-4">
+    <a href="dashboard.html" class="text-decoration-none text-secondary-emphasis d-inline-flex align-items-center gap-1 mb-3">
+      <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+    </a>
+
+    <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between gap-3">
+      <div>
+        <h1 class="display-6 fw-bold">E-Commerce Dev Team</h1>
+        <a href="#" class="text-decoration-none text-secondary-emphasis">E-Commerce Platform <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-secondary rounded-3 d-inline-flex align-items-center gap-2 py-2 px-4">
+          <i class="fa-regular fa-calendar"></i> Schedule Meeting
+        </button>
+        <button class="btn btn-primary rounded-3 d-inline-flex align-items-center gap-2 py-2 px-4">
+          <i class="fa-solid fa-video"></i> Start Call
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- main grid: left sidebar (team) + right content (chat/tasks/files) -->
+  <div class="row g-4">
+    <!-- LEFT SIDEBAR - TEAM MEMBERS & MEETINGS (col-lg-3) -->
+    <div class="col-lg-3">
+      <div class="card border rounded-4 sticky-top" style="top: 1rem;">
+        <div class="card-body">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="fw-semibold mb-0">Team Members</h5>
+            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3">4</span>
+          </div>
+          <div class="vstack gap-3 mb-4">
+            <!-- member 1 online -->
+            <div class="d-flex align-items-center gap-2">
+              <div class="avatar-wrapper">
+                <div class="avatar">JS</div>
+                <span class="status-dot status-online"></span>
+              </div>
+              <div>
+                <div class="fw-semibold small">John Smith</div>
+                <div class="small text-secondary-emphasis">Frontend Lead</div>
+              </div>
+            </div>
+            <!-- member 2 online -->
+            <div class="d-flex align-items-center gap-2">
+              <div class="avatar-wrapper">
+                <div class="avatar">AM</div>
+                <span class="status-dot status-online"></span>
+              </div>
+              <div>
+                <div class="fw-semibold small">Alice Martin</div>
+                <div class="small text-secondary-emphasis">Backend Dev</div>
+              </div>
+            </div>
+            <!-- member 3 away -->
+            <div class="d-flex align-items-center gap-2">
+              <div class="avatar-wrapper">
+                <div class="avatar">TK</div>
+                <span class="status-dot status-away"></span>
+              </div>
+              <div>
+                <div class="fw-semibold small">Tom Kim</div>
+                <div class="small text-secondary-emphasis">UI Designer</div>
+              </div>
+            </div>
+            <!-- member 4 offline -->
+            <div class="d-flex align-items-center gap-2">
+              <div class="avatar-wrapper">
+                <div class="avatar">RD</div>
+                <span class="status-dot status-offline"></span>
+              </div>
+              <div>
+                <div class="fw-semibold small">Rachel Davis</div>
+                <div class="small text-secondary-emphasis">QA Engineer</div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-3">
+
+          <!-- upcoming meetings -->
+          <h6 class="fw-semibold mb-3">Upcoming Meetings</h6>
+          <div class="vstack gap-2">
+            <div class="bg-body-tertiary p-3 rounded-3">
+              <div class="fw-semibold small">Daily Standup</div>
+              <div class="d-flex align-items-center gap-2 small text-secondary-emphasis mt-1">
+                <i class="fa-regular fa-calendar"></i> Today, 9:00 AM
+              </div>
+            </div>
+            <div class="bg-body-tertiary p-3 rounded-3">
+              <div class="fw-semibold small">Sprint Planning</div>
+              <div class="d-flex align-items-center gap-2 small text-secondary-emphasis mt-1">
+                <i class="fa-regular fa-calendar"></i> Tomorrow, 2:00 PM
+              </div>
+            </div>
+            <div class="bg-body-tertiary p-3 rounded-3">
+              <div class="fw-semibold small">Design Review</div>
+              <div class="d-flex align-items-center gap-2 small text-secondary-emphasis mt-1">
+                <i class="fa-regular fa-calendar"></i> Mar 10, 3:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT MAIN CONTENT (col-lg-9) -->
+    <div class="col-lg-9">
+      <div class="card border rounded-4 overflow-hidden">
+        <!-- TABS (bootstrap nav-tabs) -->
+        <div class="card-header bg-body-tertiary border-bottom p-0">
+          <ul class="nav nav-tabs card-header-tabs" id="teamTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="chat-tab" data-bs-toggle="tab" data-bs-target="#chat" type="button" role="tab">
+                <i class="fa-regular fa-message me-2"></i>Chat
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tasks-tab" data-bs-toggle="tab" data-bs-target="#tasks" type="button" role="tab">
+                <i class="fa-regular fa-check-square me-2"></i>Tasks
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="files-tab" data-bs-toggle="tab" data-bs-target="#files" type="button" role="tab">
+                <i class="fa-regular fa-file me-2"></i>Files
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content p-0" id="teamTabContent">
+          <!-- CHAT TAB -->
+          <div class="tab-pane fade show active" id="chat" role="tabpanel">
+            <div class="d-flex flex-column" style="height: 550px;">
+              <!-- messages area -->
+              <div class="flex-grow-1 overflow-auto p-4 d-flex flex-column gap-3" id="chatMessages">
+                <!-- message 1 (alice) -->
+                <div class="d-flex gap-2">
+                  <div class="avatar-sm flex-shrink-0">AM</div>
+                  <div class="flex-grow-1" style="max-width: 70%;">
+                    <div class="d-flex align-items-baseline gap-2 mb-1">
+                      <span class="fw-semibold small">Alice Martin</span>
+                      <span class="small text-secondary-emphasis">10:30 AM</span>
+                    </div>
+                    <div class="chat-bubble-other">Just pushed the new API endpoints to the dev branch</div>
+                  </div>
+                </div>
+                <!-- message 2 (john, own) -->
+                <div class="d-flex gap-2 flex-row-reverse">
+                  <div class="avatar-sm flex-shrink-0">JS</div>
+                  <div class="text-end" style="max-width: 70%;">
+                    <div class="d-flex align-items-baseline justify-content-end gap-2 mb-1">
+                      <span class="small text-secondary-emphasis">10:32 AM</span>
+                      <span class="fw-semibold small">John Smith</span>
+                    </div>
+                    <div class="chat-bubble-own">Great! I'll integrate them with the frontend today</div>
+                  </div>
+                </div>
+                <!-- message 3 (tom) -->
+                <div class="d-flex gap-2">
+                  <div class="avatar-sm flex-shrink-0">TK</div>
+                  <div class="flex-grow-1" style="max-width: 70%;">
+                    <div class="d-flex align-items-baseline gap-2 mb-1">
+                      <span class="fw-semibold small">Tom Kim</span>
+                      <span class="small text-secondary-emphasis">11:15 AM</span>
+                    </div>
+                    <div class="chat-bubble-other">Updated the checkout page designs. Check the Figma link in files</div>
+                  </div>
+                </div>
+                <!-- message 4 (rachel) -->
+                <div class="d-flex gap-2">
+                  <div class="avatar-sm flex-shrink-0">RD</div>
+                  <div class="flex-grow-1" style="max-width: 70%;">
+                    <div class="d-flex align-items-baseline gap-2 mb-1">
+                      <span class="fw-semibold small">Rachel Davis</span>
+                      <span class="small text-secondary-emphasis">2:45 PM</span>
+                    </div>
+                    <div class="chat-bubble-other">Found a bug in the cart calculations. Created a ticket</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- message input -->
+              <div class="border-top p-3 d-flex align-items-center gap-2">
+                <button class="btn btn-outline-secondary rounded-3 p-2"><i class="fa-regular fa-paperclip"></i></button>
+                <input type="text" class="form-control rounded-3" id="messageInput" placeholder="Type a message...">
+                <button class="btn btn-primary rounded-3 p-2"><i class="fa-regular fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- TASKS TAB -->
+          <div class="tab-pane fade" id="tasks" role="tabpanel">
+            <div class="p-4">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h4 class="fw-semibold mb-0">Team Tasks</h4>
+                <button class="btn btn-primary rounded-3"><i class="fa-regular fa-plus me-2"></i>Add Task</button>
+              </div>
+              <div class="vstack gap-3">
+                <!-- task 1 -->
+                <div class="task-item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <input type="checkbox" class="form-check-input">
+                    <div>
+                      <div class="fw-semibold">Implement payment gateway</div>
+                      <div class="d-flex align-items-center gap-2 small text-secondary-emphasis mt-1">
+                        <span>Assigned to AM</span>
+                        <span>•</span>
+                        <span class="badge bg-primary-subtle text-primary-emphasis px-2 py-1">in-progress</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-danger-subtle text-danger-emphasis px-2 py-1">high</span>
+                    <button class="btn btn-light btn-sm p-1"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+                <!-- task 2 -->
+                <div class="task-item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <input type="checkbox" class="form-check-input">
+                    <div>
+                      <div class="fw-semibold">Fix cart calculation bug</div>
+                      <div class="d-flex align-items-center gap-2 small text-secondary-emphasis mt-1">
+                        <span>Assigned to JS</span>
+                        <span>•</span>
+                        <span class="badge bg-secondary-subtle text-secondary-emphasis px-2 py-1">todo</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-danger-subtle text-danger-emphasis px-2 py-1">high</span>
+                    <button class="btn btn-light btn-sm p-1"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+                <!-- task 3 -->
+                <div class="task-item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <input type="checkbox" class="form-check-input">
+                    <div>
+                      <div class="fw-semibold">Update checkout UI</div>
+                      <div class="d-flex align-items-center gap-2 small text-secondary-emphasis mt-1">
+                        <span>Assigned to TK</span>
+                        <span>•</span>
+                        <span class="badge bg-primary-subtle text-primary-emphasis px-2 py-1">in-progress</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-warning-subtle text-warning-emphasis px-2 py-1">medium</span>
+                    <button class="btn btn-light btn-sm p-1"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+                <!-- task 4 -->
+                <div class="task-item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <input type="checkbox" class="form-check-input">
+                    <div>
+                      <div class="fw-semibold">Test user authentication</div>
+                      <div class="d-flex align-items-center gap-2 small text-secondary-emphasis mt-1">
+                        <span>Assigned to RD</span>
+                        <span>•</span>
+                        <span class="badge bg-secondary-subtle text-secondary-emphasis px-2 py-1">todo</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-info-subtle text-info-emphasis px-2 py-1">low</span>
+                    <button class="btn btn-light btn-sm p-1"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FILES TAB -->
+          <div class="tab-pane fade" id="files" role="tabpanel">
+            <div class="p-4">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h4 class="fw-semibold">Shared Files</h4>
+                <button class="btn btn-primary rounded-3"><i class="fa-regular fa-cloud-arrow-up me-2"></i>Upload File</button>
+              </div>
+              <div class="row g-3">
+                <!-- file 1 -->
+                <div class="col-md-6">
+                  <div class="file-item d-flex align-items-center gap-3">
+                    <div class="bg-primary-subtle text-primary rounded-3 d-flex align-items-center justify-content-center" style="width: 3rem; height: 3rem;">
+                      <i class="fa-regular fa-file-pdf fs-4"></i>
+                    </div>
+                    <div class="flex-grow-1 min-w-0">
+                      <div class="fw-semibold small text-truncate">API Documentation.pdf</div>
+                      <div class="d-flex gap-2 small text-secondary-emphasis">
+                        <span>2.4 MB</span> <span>•</span> <span>AM</span> <span>•</span> <span>Mar 7</span>
+                      </div>
+                    </div>
+                    <button class="btn btn-light btn-sm p-2"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+                <!-- file 2 -->
+                <div class="col-md-6">
+                  <div class="file-item d-flex align-items-center gap-3">
+                    <div class="bg-primary-subtle text-primary rounded-3 d-flex align-items-center justify-content-center" style="width: 3rem; height: 3rem;">
+                      <i class="fa-regular fa-file fs-4"></i>
+                    </div>
+                    <div class="flex-grow-1 min-w-0">
+                      <div class="fw-semibold small text-truncate">Checkout Flow.fig</div>
+                      <div class="d-flex gap-2 small text-secondary-emphasis">
+                        <span>1.8 MB</span> <span>•</span> <span>TK</span> <span>•</span> <span>Mar 7</span>
+                      </div>
+                    </div>
+                    <button class="btn btn-light btn-sm p-2"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+                <!-- file 3 -->
+                <div class="col-md-6">
+                  <div class="file-item d-flex align-items-center gap-3">
+                    <div class="bg-primary-subtle text-primary rounded-3 d-flex align-items-center justify-content-center" style="width: 3rem; height: 3rem;">
+                      <i class="fa-regular fa-database fs-4"></i>
+                    </div>
+                    <div class="flex-grow-1 min-w-0">
+                      <div class="fw-semibold small text-truncate">Database Schema.sql</div>
+                      <div class="d-flex gap-2 small text-secondary-emphasis">
+                        <span>124 KB</span> <span>•</span> <span>AM</span> <span>•</span> <span>Mar 6</span>
+                      </div>
+                    </div>
+                    <button class="btn btn-light btn-sm p-2"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+                <!-- file 4 -->
+                <div class="col-md-6">
+                  <div class="file-item d-flex align-items-center gap-3">
+                    <div class="bg-primary-subtle text-primary rounded-3 d-flex align-items-center justify-content-center" style="width: 3rem; height: 3rem;">
+                      <i class="fa-regular fa-table fs-4"></i>
+                    </div>
+                    <div class="flex-grow-1 min-w-0">
+                      <div class="fw-semibold small text-truncate">Test Cases.xlsx</div>
+                      <div class="d-flex gap-2 small text-secondary-emphasis">
+                        <span>856 KB</span> <span>•</span> <span>RD</span> <span>•</span> <span>Mar 5</span>
+                      </div>
+                    </div>
+                    <button class="btn btn-light btn-sm p-2"><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-white border-top py-3 mt-5">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span class="text-secondary-emphasis small">© 2025 Trainova · team collaboration</span>
+    <span><i class="fa-brands fa-github ms-3"></i><i class="fa-brands fa-slack ms-3"></i></span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/team.js"></script>
+</body>
+</html>

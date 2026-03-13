@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace · Trainova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/marketplace.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="../index.html">
+         Trainova
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+            </ul>
+        </div>
+
+        <div class="ms-2 d-flex align-items-center">
+            <span class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-semibold" 
+                  style="width: 40px; height: 40px; font-size: 1.1rem; cursor: default;">Jo</span> 
+        </div>
+    </div>
+</nav>
+<div class="container py-4 px-3 my-4">
+  <div class="mb-4">
+    <h1 class="display-5 fw-bold">Startup Project Marketplace</h1>
+    <p class="text-secondary">Find affordable startup projects to work on and gain real-world experience</p>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-6 col-lg-3">
+      <div class="stat-card d-flex align-items-center gap-3">
+        <div class="icon-soft"><i class="fa-solid fa-briefcase"></i></div>
+        <div>
+          <div class="fs-3 fw-bold">147</div>
+          <div class="small text-secondary">Active Projects</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="stat-card d-flex align-items-center gap-3">
+        <div class="icon-soft"><i class="fa-solid fa-dollar-sign"></i></div>
+        <div>
+          <div class="fs-3 fw-bold">$450K</div>
+          <div class="small text-secondary">Total Budget</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="stat-card d-flex align-items-center gap-3">
+        <div class="icon-soft"><i class="fa-solid fa-users"></i></div>
+        <div>
+          <div class="fs-3 fw-bold">892</div>
+          <div class="small text-secondary">Students</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="stat-card d-flex align-items-center gap-3">
+        <div class="icon-soft"><i class="fa-solid fa-chart-line"></i></div>
+        <div>
+          <div class="fs-3 fw-bold">89%</div>
+          <div class="small text-secondary">Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- info banner -->
+  <div class="banner-gradient p-4 p-md-5 mb-5 d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <div class="text-white mb-3 mb-md-0 me-md-4">
+      <h4 class="fw-semibold"><i class="fa-regular fa-lightbulb me-2"></i>Want to Post Your Startup Idea?</h4>
+      <p class="text-white-50 mb-0" style="max-width: 600px;">Get your project built by talented students at affordable rates. Turn your vision into reality.</p>
+    </div>
+    <button class="btn-white-custom"><i class="fa-solid fa-plus me-2"></i>Post a Project</button>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-3">
+      <div class="filter-sidebar">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <i class="fa-solid fa-sliders text-secondary"></i>
+          <h6 class="fw-semibold mb-0">Filters</h6>
+        </div>
+
+        <!-- categories -->
+        <div class="mb-4">
+          <div class="filter-cat-btn active" data-cat="all" onclick="setActiveCategory('all')">
+            <i class="fa-solid fa-briefcase"></i> <span>All Projects</span>
+          </div>
+          <div class="filter-cat-btn" data-cat="web" onclick="setActiveCategory('web')">
+            <i class="fa-solid fa-code"></i> <span>Web Development</span>
+          </div>
+          <div class="filter-cat-btn" data-cat="mobile" onclick="setActiveCategory('mobile')">
+            <i class="fa-solid fa-mobile-screen-button"></i> <span>Mobile Apps</span>
+          </div>
+          <div class="filter-cat-btn" data-cat="design" onclick="setActiveCategory('design')">
+            <i class="fa-solid fa-palette"></i> <span>UI/UX Design</span>
+          </div>
+          <div class="filter-cat-btn" data-cat="backend" onclick="setActiveCategory('backend')">
+            <i class="fa-solid fa-database"></i> <span>Backend & API</span>
+          </div>
+          <div class="filter-cat-btn" data-cat="cloud" onclick="setActiveCategory('cloud')">
+            <i class="fa-solid fa-cloud"></i> <span>Cloud & DevOps</span>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- budget range -->
+        <h6 class="fw-semibold mb-3">Budget Range</h6>
+        <div class="mb-4">
+          <label class="filter-check"><input type="checkbox"> Under $2K</label>
+          <label class="filter-check"><input type="checkbox"> $2K - $4K</label>
+          <label class="filter-check"><input type="checkbox"> $4K - $6K</label>
+          <label class="filter-check"><input type="checkbox"> Over $6K</label>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- duration -->
+        <h6 class="fw-semibold mb-3">Duration</h6>
+        <div>
+          <label class="filter-check"><input type="checkbox"> Less than 6 weeks</label>
+          <label class="filter-check"><input type="checkbox"> 6-10 weeks</label>
+          <label class="filter-check"><input type="checkbox"> 10-14 weeks</label>
+          <label class="filter-check"><input type="checkbox"> Over 14 weeks</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content col-lg-9 -->
+    <div class="col-lg-9">
+      <!-- search bar -->
+      <div class="mb-4">
+        <div class="position-relative">
+          <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y ms-3 text-secondary"></i>
+          <input type="text" class="form-control form-control-lg ps-5 py-3 rounded-4 border" placeholder="Search projects..." id="searchInput" onkeyup="filterProjects()">
+        </div>
+      </div>
+
+      <!-- project cards container (dynamically filtered via simple JS) -->
+      <div id="projectsContainer" class="vstack gap-4">
+        <div class="project-card" data-category="mobile" data-title="social fitness mobile app" data-description="looking for a team to build a social fitness tracking app">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative">
+              <img src="https://images.unsplash.com/photo-1633250391894-397930e3f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzI4OTg1NTV8MA&ixlib=rb-4.1.0&q=80&w=1080" class="img-fluid h-100 w-100 object-fit-cover" style="height:100%; object-fit: cover;" alt="project">
+              <span class="featured-badge"><i class="fa-regular fa-star"></i> Featured</span>
+            </div>
+            <div class="col-md-8 p-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h4 class="fw-semibold">Social Fitness Mobile App</h4>
+                <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <p class="text-secondary small mb-3">Looking for a team to build a social fitness tracking app with workout sharing and challenges</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="skill-badge">React Native</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Firebase</span>
+              </div>
+              <div class="row g-2 mb-3 small text-secondary">
+                <div class="col-6 col-md-3"><i class="fa-regular fa-money-bill-alt me-1"></i> $2,000 - $3,500</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-clock me-1"></i> 8-10 weeks</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-users me-1"></i> 3-4 devs</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-chart-line me-1"></i> 12 applied</div>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center justify-content-between mt-2">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="avatar-circle">SJ</div>
+                  <div><span class="fw-semibold small">Sarah Johnson</span><br><span class="small text-secondary">Project Owner</span></div>
+                </div>
+                <button class="btn-apply px-4 py-2">Apply <i class="fa-solid fa-chevron-right ms-1 small"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project 2 web featured -->
+        <div class="project-card" data-category="web" data-title="local business directory platform" data-description="build a comprehensive directory for local businesses">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative">
+              <img src="https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzcyOTU2MDE5fDA&ixlib=rb-4.1.0&q=80&w=1080" class="img-fluid h-100 w-100 object-fit-cover" style="object-fit: cover;" alt="project">
+              <span class="featured-badge"><i class="fa-regular fa-star"></i> Featured</span>
+            </div>
+            <div class="col-md-8 p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="fw-semibold">Local Business Directory Platform</h4>
+                <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <p class="text-secondary small mb-3">Build a comprehensive directory for local businesses with reviews, booking, and analytics</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="skill-badge">React</span><span class="skill-badge">Next.js</span><span class="skill-badge">PostgreSQL</span><span class="skill-badge">Stripe</span>
+              </div>
+              <div class="row g-2 mb-3 small text-secondary">
+                <div class="col-6 col-md-3"><i class="fa-regular fa-money-bill-alt"></i> $3,000 - $5,000</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-clock"></i> 10-12 weeks</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-users"></i> 4-5 devs</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-chart-line"></i> 8 applied</div>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="avatar-circle">MC</div>
+                  <div><span class="fw-semibold small">Michael Chen</span><br><span class="small text-secondary">Project Owner</span></div>
+                </div>
+                <button class="btn-apply px-4 py-2">Apply <i class="fa-solid fa-chevron-right ms-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project 3 cloud -->
+        <div class="project-card" data-category="cloud" data-title="smart inventory management system" data-description="develop a cloud-based inventory system">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NzI4OTQ1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080" class="img-fluid h-100 w-100 object-fit-cover" style="object-fit: cover;" alt="project">
+            </div>
+            <div class="col-md-8 p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="fw-semibold">Smart Inventory Management System</h4>
+                <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <p class="text-secondary small mb-3">Develop a cloud-based inventory system for small businesses with real-time tracking</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="skill-badge">Vue.js</span><span class="skill-badge">Python</span><span class="skill-badge">AWS</span><span class="skill-badge">MySQL</span>
+              </div>
+              <div class="row g-2 mb-3 small text-secondary">
+                <div class="col-6 col-md-3"><i class="fa-regular fa-money-bill-alt"></i> $1,500 - $2,500</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-clock"></i> 6-8 weeks</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-users"></i> 2-3 devs</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-chart-line"></i> 15 applied</div>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="avatar-circle">EW</div>
+                  <div><span class="fw-semibold small">Emma Wilson</span><br><span class="small text-secondary">Project Owner</span></div>
+                </div>
+                <button class="btn-apply px-4 py-2">Apply <i class="fa-solid fa-chevron-right ms-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project 4 mobile (unfeatured) -->
+        <div class="project-card" data-category="mobile" data-title="educational game for kids" data-description="create an interactive learning game">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://images.unsplash.com/photo-1633250391894-397930e3f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzI4OTg1NTV8MA&ixlib=rb-4.1.0&q=80&w=1080" class="img-fluid h-100 w-100 object-fit-cover" style="object-fit: cover;" alt="project">
+            </div>
+            <div class="col-md-8 p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="fw-semibold">Educational Game for Kids</h4>
+                <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <p class="text-secondary small mb-3">Create an interactive learning game for children aged 6-10 with fun challenges</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="skill-badge">Unity</span><span class="skill-badge">C#</span><span class="skill-badge">UI Design</span>
+              </div>
+              <div class="row g-2 mb-3 small text-secondary">
+                <div class="col-6 col-md-3"><i class="fa-regular fa-money-bill-alt"></i> $2,500 - $4,000</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-clock"></i> 8-10 weeks</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-users"></i> 3-4 devs</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-chart-line"></i> 6 applied</div>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="avatar-circle">DP</div>
+                  <div><span class="fw-semibold small">David Park</span><br><span class="small text-secondary">Project Owner</span></div>
+                </div>
+                <button class="btn-apply px-4 py-2">Apply <i class="fa-solid fa-chevron-right ms-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project 5 web featured -->
+        <div class="project-card" data-category="web" data-title="restaurant ordering & delivery system" data-description="build a complete solution for restaurant">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative">
+              <img src="https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzcyOTU2MDE5fDA&ixlib=rb-4.1.0&q=80&w=1080" class="img-fluid h-100 w-100 object-fit-cover" style="object-fit: cover;" alt="project">
+              <span class="featured-badge"><i class="fa-regular fa-star"></i> Featured</span>
+            </div>
+            <div class="col-md-8 p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="fw-semibold">Restaurant Ordering & Delivery System</h4>
+                <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <p class="text-secondary small mb-3">Build a complete solution for restaurant ordering, kitchen management, and delivery</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="skill-badge">React</span><span class="skill-badge">Node.js</span><span class="skill-badge">MongoDB</span><span class="skill-badge">Socket.io</span>
+              </div>
+              <div class="row g-2 mb-3 small text-secondary">
+                <div class="col-6 col-md-3"><i class="fa-regular fa-money-bill-alt"></i> $4,000 - $6,000</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-clock"></i> 12-14 weeks</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-users"></i> 5-6 devs</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-chart-line"></i> 20 applied</div>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="avatar-circle">LA</div>
+                  <div><span class="fw-semibold small">Lisa Anderson</span><br><span class="small text-secondary">Project Owner</span></div>
+                </div>
+                <button class="btn-apply px-4 py-2">Apply <i class="fa-solid fa-chevron-right ms-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project 6 backend -->
+        <div class="project-card" data-category="backend" data-title="ai-powered content generator" data-description="develop a tool that helps content creators">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NzI4OTQ1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080" class="img-fluid h-100 w-100 object-fit-cover" style="object-fit: cover;" alt="project">
+            </div>
+            <div class="col-md-8 p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="fw-semibold">AI-Powered Content Generator</h4>
+                <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <p class="text-secondary small mb-3">Develop a tool that helps content creators generate and optimize social media posts</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="skill-badge">Python</span><span class="skill-badge">FastAPI</span><span class="skill-badge">OpenAI API</span><span class="skill-badge">React</span>
+              </div>
+              <div class="row g-2 mb-3 small text-secondary">
+                <div class="col-6 col-md-3"><i class="fa-regular fa-money-bill-alt"></i> $3,500 - $5,500</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-clock"></i> 10-12 weeks</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-users"></i> 3-4 devs</div>
+                <div class="col-6 col-md-3"><i class="fa-regular fa-chart-line"></i> 18 applied</div>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="avatar-circle">JT</div>
+                  <div><span class="fw-semibold small">James Taylor</span><br><span class="small text-secondary">Project Owner</span></div>
+                </div>
+                <button class="btn-apply px-4 py-2">Apply <i class="fa-solid fa-chevron-right ms-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- empty state (hidden by default) -->
+      <div id="emptyState" class="text-center py-5 d-none">
+        <div class="bg-light d-inline-flex p-4 rounded-5 mb-3">
+          <i class="fa-solid fa-magnifying-glass fs-1 text-secondary"></i>
+        </div>
+        <h4 class="fw-semibold">No projects found</h4>
+        <p class="text-secondary">Try adjusting your filters or search query</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- simple footer -->
+<footer class="bg-white border-top py-4 mt-5">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span class="text-secondary">© 2025 ProjectFlow · learn by building</span>
+    <span><i class="fa-brands fa-twitter ms-3"></i><i class="fa-brands fa-github ms-3"></i></span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/marketplace.js"></script>
+
+</body>
+</html>
